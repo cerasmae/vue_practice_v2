@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} Book Feed {% endblock %}
+
+{% block script %}
+    <script src="{% static 'components/vue_book.js' %}"></script>
+{% endblock %}
+
+
+{% block pagecontent %}
+
+<div class="container">
+    <div id="flow">
+        <span class="flow-1"></span>
+        <span class="flow-2"></span>
+        <span class="flow-3"></span>
+    </div>
+    <div class="section" id="book_app">
+        <book-feed>
+        </book-feed>
+    </div>
+</div>
+
+
+{% endblock %}
